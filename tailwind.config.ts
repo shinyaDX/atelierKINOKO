@@ -13,8 +13,22 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      writingMode: {
+        "vertical-rl": "vertical-rl",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function (pluginAPI: any) {
+      const { addUtilities } = pluginAPI;
+      const newUtilities = {
+        ".writing-vertical-rl": {
+          "writing-mode": "vertical-rl",
+          "text-orientation": "mixed",
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
 export default config;
