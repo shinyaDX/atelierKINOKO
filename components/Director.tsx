@@ -16,7 +16,7 @@ function Director() {
               height={500}
               className="z-50 top-8 relative left-10"
             />
-            <div className="absolute top-24 right-6 w-full h-[34rem] z-40 bg-[#D9D9D9]"></div>
+            <div className="absolute top-24 right-6 w-full h-[30rem] md:h-[34rem] z-40 bg-[#D9D9D9]"></div>
           </div>
           <div className="bg-[#E1BEA0] flex-1 text-white flex justify-center tracking-wider">
             <div className="flex flex-col gap-6 mt-14">
